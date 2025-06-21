@@ -8,5 +8,14 @@ public interface QuestionService {
 
     String getAnswer(String question);
 
+
     Collection<Question> getAll();
+
+
+
+    Question getRandomQuestion();
+
+
+
+
 }

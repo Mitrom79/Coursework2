@@ -3,14 +3,11 @@ package pro.skyjava.course2.examinerservice.servise;
 import org.springframework.stereotype.Service;
 import pro.skyjava.course2.examinerservice.domain.Question;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 
 @Service
-public class ExaminerServiceImpl {
+public class ExaminerServiceImpl implements QuestionService {
     private final JavaQuestionService javaQuestionService;
     ExaminerServiceImpl(JavaQuestionService javaQuestionService) {
         this.javaQuestionService = javaQuestionService;
@@ -31,4 +28,19 @@ public class ExaminerServiceImpl {
         return res;
     }
 
+
+    @Override
+    public String getAnswer(String question) {
+        return "";
+    }
+
+    @Override
+    public Collection<Question> getAll() {
+        return List.of();
+    }
+
+    @Override
+    public Question getRandomQuestion() {
+        return null;
+    }
 }
