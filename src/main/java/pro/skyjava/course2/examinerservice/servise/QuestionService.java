@@ -6,13 +6,21 @@ import java.util.Collection;
 
 public interface QuestionService {
 
-    String getAnswer(String question);
+    Question add(String question, String answer);
 
+    Question add(Question question);
+
+    Question remove(Question question);
 
     Collection<Question> getAll();
 
-
     Question getRandomQuestion();
+
+    String getAnswer(String question);
+
+    void addTestQuestions();
+
+
 
 
 }
