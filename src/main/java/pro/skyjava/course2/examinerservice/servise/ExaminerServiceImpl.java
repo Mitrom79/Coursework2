@@ -7,7 +7,7 @@ import java.util.*;
 
 
 @Service
-public class ExaminerServiceImpl implements QuestionService {
+public class ExaminerServiceImpl implements ExaminerService {
     private final JavaQuestionService javaQuestionService;
     ExaminerServiceImpl(JavaQuestionService javaQuestionService) {
         this.javaQuestionService = javaQuestionService;
@@ -29,18 +29,5 @@ public class ExaminerServiceImpl implements QuestionService {
     }
 
 
-    @Override
-    public String getAnswer(String question) {
-        return "";
-    }
 
-    @Override
-    public Collection<Question> getAll() {
-        return List.of();
-    }
-
-    @Override
-    public Question getRandomQuestion() {
-        return null;
-    }
 }
