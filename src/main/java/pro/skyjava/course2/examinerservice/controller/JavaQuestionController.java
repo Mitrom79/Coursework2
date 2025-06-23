@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import pro.skyjava.course2.examinerservice.domain.Question;
+import pro.skyjava.course2.examinerservice.servise.QuestionService;
 import pro.skyjava.course2.examinerservice.servise.JavaQuestionService;
 
 import java.util.Collection;
